@@ -1,5 +1,5 @@
 <footer>
-    <h2>
+    <h1>
         FOOTER
-    </h2>
+    </h1>
 </footer>

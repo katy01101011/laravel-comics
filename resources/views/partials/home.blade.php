@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('main-content')
-    <h1>
-        MAIN
-    </h1>
+
+@include('components.home.jumbotron')
+@include('components.home.comics')
+@include('components.home.links')
+
 @endsection

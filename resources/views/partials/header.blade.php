@@ -1,3 +1,4 @@
 <header>
-    <h2>HEADER</h2>
+    <div class="header-top">header top</div>
+    <div class="header-bottom">header bottom</div>
 </header>

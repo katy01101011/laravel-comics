@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-top {
+  height: 20px;
+  width: 100%;
+  background-color: deepskyblue;
+  color: white;
+}
+
+.header-bottom {
+  height: 70px;
+  width: 100%;
+  background-color: lightcyan;
+  color: black;
+}
+
+main {
+  width: 100%;
+  height: 1000px;
+  background-color: aliceblue;
+}
+main .jumbo {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
