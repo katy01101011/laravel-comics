@@ -56,22 +56,27 @@
             [
                 'name' => 'Digital comics',
                 'route' => 'digital-comics',
+                'icon' => 'buy-comics-digital-comics.png',
             ],
             [
                 'name' => 'DC merchandise',
                 'route' => 'dc-merchandise',
+                'icon' => 'buy-comics-merchandise.png',
             ],
             [
                 'name' => 'Subscription',
                 'route' => 'subscription',
+                'icon' => 'buy-comics-subscriptions.png',
             ],
             [
                 'name' => 'Comic shop locator',
                 'route' => 'comic-shop',
+                'icon' => 'buy-comics-shop-locator.png',
             ],
             [
                 'name' => 'DC power visa',
                 'route' => 'visa',
+                'icon' => 'buy-dc-power-visa.svg',
             ],
         ],
         'footer-links' => [
