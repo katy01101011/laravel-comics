@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 img {
@@ -13,44 +13,129 @@ img {
 }
 
 .container {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .header-top {
-  height: 20px;
+  height: 25px;
   width: 100%;
-  background-color: deepskyblue;
+  background-color: dodgerblue;
   color: white;
+}
+.header-top .container {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.header-top .container a {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: white;
+  margin-left: 2rem;
 }
 
 .header-bottom {
-  height: 70px;
+  height: 100px;
   width: 100%;
   background-color: lightcyan;
   color: black;
 }
+.header-bottom .container .nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-bottom .container .nav__logo a img {
+  width: 80%;
+}
+.header-bottom .container .nav__menu {
+  line-height: 100px;
+}
+.header-bottom .container .nav__menu ul {
+  display: flex;
+}
+.header-bottom .container .nav__menu ul li {
+  padding: 0.25rem;
+  margin: 0 0.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header-bottom .container .nav__menu ul li i {
+  position: relative;
+  bottom: 0.2rem;
+  left: 0.1rem;
+}
+.header-bottom .container .nav__search {
+  height: 1.5rem;
+  width: 120px;
+  border-bottom: 1px solid blue;
+  text-align: end;
+}
+.header-bottom .container .nav__search input {
+  background-color: transparent;
+  width: 70px;
+  border: none;
+  text-align: end;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.header-bottom .container .nav__search input:focus {
+  background-color: transparent;
+  outline: none;
+}
 
 main {
   width: 100%;
-  height: 1000px;
   background-color: aliceblue;
 }
 main .jumbo {
   width: 100%;
-  height: 300px;
   background-image: url(../images/jumbotron.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+main .comics {
+  text-align: center;
+}
 main .comics .container {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 main .comics .container .card {
-  width: calc(16.6666666667% - 1.5rem);
+  width: calc(12.5vw - 1.5em);
   margin: 0.75rem;
   background-color: lightblue;
+  padding: 0.5rem;
+  text-align: start;
+}
+main .comics .container .card__image {
+  width: 100%;
+  height: calc(12.5vw - 1.5em);
+  overflow: hidden;
+}
+main .comics .container .card__image img {
+  width: 100%;
+}
+main .comics .container .card__text {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 1rem 0;
 }
 main .home-links {
   background-color: dodgerblue;
@@ -58,6 +143,7 @@ main .home-links {
 main .home-links .container {
   display: flex;
   justify-content: space-between;
+  padding: 3rem 0;
 }
 main .home-links .container .link {
   display: flex;
@@ -72,4 +158,18 @@ main .home-links .container .link__icon img {
 }
 main .home-links .container .link__name {
   font-size: 0.7rem;
+}
+
+.footer {
+  display: flex;
+}
+.footer__column {
+  width: 200px;
+}
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__social__links {
+  display: flex;
 }

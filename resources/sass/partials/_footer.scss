@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+
+    &__column {
+        width: 200px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+
+        &__links {
+            display: flex;
+        }
+    }
+}

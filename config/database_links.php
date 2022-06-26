@@ -9,7 +9,7 @@
             [
                 'name' => 'Comics',
                 'route' => 'comics',
-                'active' => false,
+                'active' => true,
             ],
             [
                 'name' => 'Movies',
@@ -79,8 +79,8 @@
                 'icon' => 'buy-dc-power-visa.svg',
             ],
         ],
-        'footer-links' => [
-            'dc-comics' => [
+        'footerLinks' => [
+            'dcComics' => [
                 [
                     'name' => 'Characters',
                     'route' => 'characters',
@@ -186,6 +186,33 @@
                 [
                     'name' => 'DC Power Visa',
                     'route' => 'visa',
+                ],
+            ],
+            'social' => [
+                [
+                    'name' => 'facebook',
+                    'icon' => 'facebook-f',
+                    'link' => 'https://www.facebook.com/dc',
+                ],
+                [
+                    'name' => 'twitter',
+                    'icon' => 'twitter',
+                    'link' => 'https://twitter.com/dccomics',
+                ],
+                [
+                    'name' => 'youtube',
+                    'icon' => 'youtube',
+                    'link' => 'https://www.youtube.com/user/DCEntertainmentTV',
+                ],
+                [
+                    'name' => 'pinterest',
+                    'icon' => 'pinterest-p',
+                    'link' => 'https://www.pinterest.it/dccomics/',
+                ],
+                [
+                    'name' => 'periscope',
+                    'icon' => 'periscope',
+                    'link' => 'https://www.periscope.tv/DCComics/1ZkKzezXwZdxv',
                 ],
             ],
         ]

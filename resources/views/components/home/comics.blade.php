@@ -10,4 +10,6 @@ $comicsArray = config('database_comics');
         @endforeach
     </div>
 
+    <button>Load more</button>
+
 </div>
