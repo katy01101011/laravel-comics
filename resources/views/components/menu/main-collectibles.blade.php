@@ -1,0 +1,1 @@
+<h1>Collectibles</h1>

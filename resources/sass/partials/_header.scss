@@ -1,7 +1,7 @@
 .header-top {
     height: 25px;
     width: 100%;
-    background-color: dodgerblue;
+    background-color: $primary_color;
     color: white;
 
     .container {
@@ -22,7 +22,7 @@
 .header-bottom {
     height: 100px;
     width: 100%;
-    background-color: lightcyan;
+    background-color: $secondary_color;
     color: black;
 
     .container {

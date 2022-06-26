@@ -1,4 +1,17 @@
+@import "variables.scss";
+
 @import "partials/_common.scss";
 @import "partials/_header.scss";
 @import "partials/_main.scss";
 @import "partials/_footer.scss";
+
+@import "partials/menu/_characters.scss";
+@import "partials/menu/_comics.scss";
+@import "partials/menu/_movies.scss";
+@import "partials/menu/_tv.scss";
+@import "partials/menu/_games.scss";
+@import "partials/menu/_collectibles.scss";
+@import "partials/menu/_videos.scss";
+@import "partials/menu/_fans.scss";
+@import "partials/menu/_news.scss";
+@import "partials/menu/_shop.scss";

@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Signika", sans-serif;
 }
 
 img {
@@ -25,10 +25,14 @@ li {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .header-top {
   height: 25px;
   width: 100%;
-  background-color: dodgerblue;
+  background-color: #1e90FF;
   color: white;
 }
 .header-top .container {
@@ -47,7 +51,7 @@ li {
 .header-bottom {
   height: 100px;
   width: 100%;
-  background-color: lightcyan;
+  background-color: #FFFFFF;
   color: black;
 }
 .header-bottom .container .nav {
@@ -99,46 +103,80 @@ li {
 
 main {
   width: 100%;
-  background-color: aliceblue;
+  background-color: #2b2b2c;
 }
 main .jumbo {
   width: 100%;
+  height: 350px;
   background-image: url(../images/jumbotron.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .comics {
+main .comics-list {
   text-align: center;
 }
-main .comics .container {
+main .comics-list .container {
+  text-align: left;
+}
+main .comics-list .container h2 {
+  display: inline-block;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #1e90FF;
+  padding: 0.75rem 1.5rem;
+  position: relative;
+  bottom: 1.75rem;
+}
+main .comics-list .container .comics {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-main .comics .container .card {
+main .comics-list .container .comics .card {
   width: calc(12.5vw - 1.5em);
   margin: 0.75rem;
-  background-color: lightblue;
   padding: 0.5rem;
   text-align: start;
 }
-main .comics .container .card__image {
-  width: 100%;
+main .comics-list .container .comics .card__image {
+  max-width: 100%;
   height: calc(12.5vw - 1.5em);
   overflow: hidden;
 }
-main .comics .container .card__image img {
+main .comics-list .container .comics .card__image img {
   width: 100%;
+  opacity: 0.85;
+  transition: 0.5s;
 }
-main .comics .container .card__text {
+main .comics-list .container .comics .card__text {
   color: white;
   font-size: 0.8rem;
-  font-weight: 100;
   text-transform: uppercase;
   margin: 1rem 0;
+  transition: 0.5s;
+}
+main .comics-list .container .comics .card__text h3 {
+  font-weight: 300;
+}
+main .comics-list .container .comics .card:hover .card__image > img {
+  opacity: 1;
+  transition: 0.5s;
+}
+main .comics-list .container .comics .card:hover .card__text {
+  color: #1e90FF;
+  transition: 0.5s;
+}
+main .comics-list button {
+  background-color: #1e90FF;
+  border: none;
+  padding: 0.8rem 3.5rem;
+  margin: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 main .home-links {
-  background-color: dodgerblue;
+  background-color: #1e90FF;
 }
 main .home-links .container {
   display: flex;
@@ -151,25 +189,208 @@ main .home-links .container .link {
   width: calc(20% - 0.5rem);
 }
 main .home-links .container .link__icon {
-  height: 60px;
+  max-width: 57px;
+  height: 57px;
 }
 main .home-links .container .link__icon img {
+  width: 100%;
   height: 100%;
 }
 main .home-links .container .link__name {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  margin-left: 0.7rem;
+  color: white;
+  text-transform: uppercase;
+}
+main .home-links .container .link__name h3 {
+  font-weight: 300;
 }
 
-.footer {
+footer {
+  background-image: url(../images/footer-bg.jpg);
+  color: #FFFFFF;
+}
+footer .container {
+  background-image: url("../images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-size: 510px;
+  background-position-x: right;
+  background-position-y: center;
+}
+footer .container .footer {
   display: flex;
 }
-.footer__column {
-  width: 200px;
+footer .container .footer__column {
+  width: 180px;
 }
-.footer__social {
+footer .container .copyright, footer .container a {
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  color: rgb(129, 129, 129);
+}
+footer .container .copyright a, footer .container a a {
+  color: #1e90FF;
+}
+footer .container h3 {
+  margin: 1rem 0;
+}
+footer .social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #2b2b2c;
+  padding: 2rem 0;
 }
-.footer__social__links {
+footer .social .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: none;
+}
+footer .social .container .social_links {
+  display: flex;
+  align-items: center;
+}
+footer .social .container .social_links h3 {
+  color: #1e90FF;
+  text-transform: uppercase;
+}
+footer .social .container .social_links ul li {
+  display: inline-block;
+  background-color: rgb(129, 129, 129);
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.2rem;
+}
+footer .social .container .social_links ul li a {
+  color: #2b2b2c;
+  font-size: 1.3rem;
+}
+footer .social .container button {
+  background-color: #2b2b2c;
+  border: 2px solid #1e90FF;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem;
+  transition: 0.5s;
+}
+footer .social .container button:hover {
+  background-color: #1e90FF;
+  transition: 0.5s;
+}
+
+.characters .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.characters .container h1 {
+  padding: 15rem 0;
+}
+
+.comics .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.comics .container h1 {
+  padding: 15rem 0;
+}
+
+.movies .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.movies .container h1 {
+  padding: 15rem 0;
+}
+
+.tv .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.tv .container h1 {
+  padding: 15rem 0;
+}
+
+.games .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.games .container h1 {
+  padding: 15rem 0;
+}
+
+.collectibles .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.collectibles .container h1 {
+  padding: 15rem 0;
+}
+
+.videos .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.videos .container h1 {
+  padding: 15rem 0;
+}
+
+.fans .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.fans .container h1 {
+  padding: 15rem 0;
+}
+
+.news .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.news .container h1 {
+  padding: 15rem 0;
+}
+
+.shop .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.shop .container h1 {
+  padding: 15rem 0;
 }

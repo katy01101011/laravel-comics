@@ -48,12 +48,15 @@
         </div>
 
         <div class="copyright">
-            Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            All Site Content TM and © 2020 DC Entertainment, unless otherwise <a>noted here</a>. All rights reserved.
+            <br>
+            <a href="">Cookies Settings</a>
         </div>
-
-        <div class="footer__social">
+    </div>
+    <div class="social">
+        <div class="container">
             <button>Sign-up now!</button>
-            <div class="footer__social__links">
+            <div class="social_links">
                 <h3>Follow Us</h3>
                 @foreach ($footerLinks['social'] as $link)
                     <ul>
@@ -66,6 +69,5 @@
                 @endforeach
             </div>
         </div>
-    
     </div>
 </footer>

@@ -11,7 +11,7 @@
         <div class="container">
             <nav class="nav">
                 <div class="nav__logo">
-                    <a href="">
+                    <a href="{{ route('home') }}">
                         <img src="../images/dc-logo.png" alt="home">
                     </a>
                 </div>
@@ -19,7 +19,7 @@
                     <ul>
                         @foreach ($headerLinks as $link)
                             <li>
-                                <a href="">
+                                <a href="{{ $link['route'] }}">
                                     {{ $link['name'] }}
                                 </a>
                                 @if ($loop->last)
