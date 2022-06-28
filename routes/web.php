@@ -21,7 +21,6 @@ Route::get('/', function () {
 })->name('home');
 
 // MENU HEADER - INIZIO
-
 Route::get('/characters', function () {
     
     $linksArray = config('database_links');
@@ -81,5 +80,22 @@ Route::get('/shop', function () {
     $linksArray = config('database_links');
     return view('partials.menu.shop', $linksArray);
 })->name('shop');
-
 // MENU HEADER - FINE
+
+// MAIN - CARD
+Route::get('/{id}', function ($id) {
+    
+    $linksArray = config('database_links');
+    $databaseComics = collect(config('database_comics'));
+    $currentComics = $databaseComics->where('id', $id)->first();
+
+    $data = [
+        'linksArray' => $linksArray,
+        'headerLinks' => $linksArray['headerLinks'],
+        'footerLinks' => $linksArray['footerLinks'],
+        'currentComics' => $currentComics,
+    ];
+
+    // dd($data);
+    return view('partials.single.comics_details', $data);
+})->name('comics-details');
